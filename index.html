@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Science Portfolio of an Aspiring Data Science Engineer.">
+    <title>Data Science Portfolio</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+        <div class="logo">Data<span>Sci</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-content fade-in">
+                <p class="greeting">Hello, I am</p>
+                <h1 class="name">Albert Antony</h1>
+                <h2 class="title"><span id="typing-text"></span><span class="cursor-blink">|</span></h2>
+                <p class="tagline">Transforming complex data into actionable insights.<br>Bridging the gap between
+                    machine learning and real-world solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="section-title fade-in">
+                <h2>About <span>Me</span></h2>
+            </div>
+            <div class="about-content grid-2 fade-in">
+                <div class="about-text glass-card">
+                    <h3>My Journey</h3>
+                    <p>My fascination with Data Science began when I realized the power of data in decision-making. I've
+                        spent the last few years immersing myself in statistics, programming, and machine learning to
+                        build intelligent systems.</p>
+                    <h3>Why Data Science?</h3>
+                    <p>I love uncovering hidden patterns. Data Science sits perfectly at the intersection of logic,
+                        mathematics, and creative problem solving.</p>
+                    <h3>Currently Learning</h3>
+                    <p>I am currently diving deep into Deep Learning with PyTorch and NLP transformers.</p>
+                    <a href="#" class="btn btn-primary mt-4"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+                <div class="about-image glass-card">
+                    <!-- Placeholder Image -->
+                    <div class="img-placeholder"><i class="fas fa-user-astronaut"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="section-title fade-in">
+                <h2>My <span>Skills</span></h2>
+            </div>
+            <div class="skills-grid grid-4 fade-in">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>R</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-chart-pie"></i> Data Analysis</h3>
+                    <div class="skill-item">
+                        <span>Pandas/NumPy</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Tableau</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>EDA</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-item">
+                        <span>Scikit-Learn</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>TensorFlow</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>XGBoost</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-item">
+                        <span>Git/GitHub</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Jupyter</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Docker</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="section-title fade-in">
+                <h2>Featured <span>Projects</span></h2>
+            </div>
+
+            <div class="filter-btns fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classification">Classification</button>
+                <button class="filter-btn" data-filter="regression">Regression</button>
+                <button class="filter-btn" data-filter="clustering">Clustering</button>
+            </div>
+
+            <div class="projects-grid grid-3 fade-in">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="classification">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-1">Customer Churn Prediction</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Prediction</h3>
+                        <p class="tag">Classification</p>
+                        <p><strong>Problem:</strong> Identify customers likely to leave the service.</p>
+                        <p><strong>Dataset:</strong> Telco Customer Churn (10k rows).</p>
+                        <p><strong>Model:</strong> Random Forest Classifier</p>
+                        <p><strong>Result:</strong> 85% Accuracy, 82% F1-Score.</p>
+                        <p><strong>Key Learning:</strong> Feature importance and class imbalance handling using SMOTE.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/albertantony123"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="regression">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-2">House Price Prediction</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>House Price Estimator</h3>
+                        <p class="tag">Regression</p>
+                        <p><strong>Problem:</strong> Predict real estate prices based on property features.</p>
+                        <p><strong>Dataset:</strong> Ames Housing Dataset.</p>
+                        <p><strong>Model:</strong> XGBoost Regressor</p>
+                        <p><strong>Result:</strong> R2 Score of 0.89.</p>
+                        <p><strong>Key Learning:</strong> Advanced feature engineering and hyperparameter tuning.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/albertantony123"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="clustering">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-3">Market Segmentation</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation</h3>
+                        <p class="tag">Clustering</p>
+                        <p><strong>Problem:</strong> Group retail customers based on purchasing behavior.</p>
+                        <p><strong>Dataset:</strong> E-commerce sales data.</p>
+                        <p><strong>Model:</strong> K-Means Clustering & PCA</p>
+                        <p><strong>Result:</strong> Identified 4 distinct customer personas.</p>
+                        <p><strong>Key Learning:</strong> Dimensionality reduction and choosing optimal K using elbow
+                            method.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/albertantony123"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section-padding">
+            <div class="section-title fade-in">
+                <h2>Certifications <span>& Courses</span></h2>
+            </div>
+            <div class="certs-list grid-2 fade-in">
+                <div class="cert-item glass-card">
+                    <h4>Machine Learning Specialization</h4>
+                    <p class="platform"><i class="fas fa-award"></i> Coursera (DeepLearning.AI)</p>
+                    <p><strong>Key Takeaway:</strong> Strong mathematical foundation of supervised and unsupervised
+                        learning algorithms.</p>
+                </div>
+                <div class="cert-item glass-card">
+                    <h4>Data Science Professional Certificate</h4>
+                    <p class="platform"><i class="fas fa-award"></i> IBM</p>
+                    <p><strong>Key Takeaway:</strong> Practical application of Python data analysis libraries and SQL
+                        integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Learning Section -->
+        <section id="blog" class="blog section-padding">
+            <div class="section-title fade-in">
+                <h2>My <span>Blog</span></h2>
+                <p>Sharing my learning journey.</p>
+            </div>
+            <div class="blog-grid grid-2 fade-in">
+                <div class="blog-card glass-card">
+                    <div class="blog-content">
+                        <span class="date">Oct 15, 2023</span>
+                        <h3>How KMeans works intuitively</h3>
+                        <p>A deep dive into the math and intuition behind the K-Means clustering algorithm, without the
+                            complex jargon.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card glass-card">
+                    <div class="blog-content">
+                        <span class="date">Nov 02, 2023</span>
+                        <h3>What I learned from my first ML project</h3>
+                        <p>From data cleaning woes to the excitement of model evaluation, here are my key takeaways from
+                            my first end-to-end ML pipeline.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="section-title fade-in">
+                <h2>Get In <span>Touch</span></h2>
+            </div>
+            <div class="contact-container grid-2 fade-in">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Let's talk about data, machine learning, or potential opportunities!</p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-envelope"></i> your.email@example.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> City, Country</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/albertantony123"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card">
+                    <form id="portfolio-form">
+                        <div class="input-group">
+                            <input type="text" id="Name" required placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="emailid" required placeholder="Your Email">
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Albert Antony. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
